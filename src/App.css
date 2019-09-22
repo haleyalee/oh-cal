@@ -1,22 +1,175 @@
-.App {
+body{
+  color:#fff;
+  font-family: 'Ubuntu', serif;
+  font-size:40px;
+}
+.main-container{
+  height: 100%;
+  max-width:100%;
+  margin:0 auto;
+  padding:0px;
+  margin-top:0px;
+  padding:0px;
+  background:#FFF;
+  margin-top:0px;
+}
+.main-header{
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+  height:100px;
+  background:#FFF;
+  color: black;
+  border-bottom: 1px solid #BDBDBD;
+}
+.menu-button{
+  background:#FFF;
+  height:50px;
+  background:url(icon.png) no-repeat;
+  position:relative;
+  border: none;
+  float:right;
+}
+.dropdown{
+  content: "";
+  margin: 30px 20px;
+  display: inline-block;
+  background-color: #fff;
+}
+.dropdown-content{
+  margin-top: 50px;
+  margin-left: -40px;
+  display:none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  background-color: white;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 10;
+}
+
+#sidebar{
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  float: right;
+  width: 20%;
+  min-height: 500px;
+  text-align: center;
+  z-index: -20;
+  overflow-x: hidden;
+  margin-top: 40px;
+  right: 0;
+}
+
+/* download button */
+.bigredbutton {
+  background-color: red;
+  border: none;
+  width: 150px;
+  margin: 10px auto;
+  border-radius: 15px; /* curved corners */
+  padding: 10px 5px;
+  /* text adjustment */
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  transition: background-color 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-transform: uppercase;
+}
+
+.bigredbutton:hover {
+  background-color: #8B0000;
+  transition-duration: 0.3s;
+}
+
+.bigredbutton:active {
+  background-color: #8B0000;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+/* search bar */
+#search {
+  padding-top: 40px;
+  font-size: 15px;
+  margin: 0 auto;
+  border: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* right now, the "course list" displays when hovered
+over... later hope to allow it to display/autocomplete
+as text is entered */
+.course-list {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 75%;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.course-list a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.course-list a:hover {
+  background-color: #ddd;
+}
+
+#search:hover .course-list, #search:active .course-list {
+  margin: 0px 40px;
+  display: block;
+}
+
+
+input[type=text] {
+  text-align: center;
+  width: 80%;
+  padding: 5px 10px;
+  line-height: 18px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #EEE;
+  transition: background-color 0.4s;
+}
+
+input[type=text]:hover {
+  transition-duration: 0.4s;
+  background-color: #FFF;
+}
+
+.calendar {
+  width: 70%;
+  margin: 20px;
+  float: left;
+}
+
+.calendar table {
+  width: 100%;
+  table-layout: fixed;
+}
+.calendar th {
+  padding: 10px;
+  border: 1px solid black;
+  width: 10%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.calendar td {
+  padding: 10px;
+  border: 1px solid black;
 }
