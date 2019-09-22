@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body id="body">
+
+    <nav>oh!cal</nav>
+
+    <!-- <div id="main-title" style="padding: 2px"> -->
+
+    <!-- </div> -->
+
+    <div id="calendar"> </div>
+
+    <div id="sidebar">
+
+      <!-- download button -->
+      <div id="download" onclick="download()">DOWNLOAD</div>
+      <script>
+        function download() {
+          // download ics file when download button pressed
+        }
+      </script>
+
+      <!-- search bar -->
+      <div id="search"> <!-- class="autocomplete"> -->
+
+        <!-- temporary list of courses until database added -->
+        <div class="course-list">
+          <a href="#">ECE 2100</a>
+          <a href="#">ECE 2200</a>
+          <a href="#">ECE 2300</a>
+          <a href="#">CS 2110</a>
+        </div>
+
+        <input type="text" class="shadow" placeholder="search for a course">
+        <!-- <script>
+          var courses = ["ECE2100", "ECE2200", "ECE2300", "CS2110"];
+          autocomplete(document.getElementById("search"), courses);
+          // courses is a JavaScript array
+        </script> -->
+      </div>
+
+
+  </body>
+
+</html>

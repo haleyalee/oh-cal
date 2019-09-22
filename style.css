@@ -1,0 +1,165 @@
+nav {
+  border-bottom-width: thin;
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+/*
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #fff; */
+}
+
+/* add inline shadow to elements */
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #aaa;
+   -webkit-box-shadow: inset 0 0 10px #AAA;
+   box-shadow:         inset 0 0 10px #AAA;
+}
+
+/* autocomplete */
+/* .autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+} */
+
+#sidebar{
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  z-index: -20;
+  overflow-x: hidden;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* download button */
+#download {
+  background-color: red;
+  border: none;
+  width: 150px;
+  margin-left: auto; /* center button in sidebar */
+  margin-right: auto;
+  border-radius: 15px; /* curved corners */
+  padding: 10px 5px;
+  /* text adjustment */
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  transition: background-color 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#download:hover {
+  background-color: #8B0000;
+  transition-duration: 0.3s;
+}
+
+#download:active {
+  background-color: #8B0000;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+/* search bar */
+#search {
+  padding-top: 40px;
+  font-size: 15px;
+  margin: 0 auto;
+  border: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* right now, the "course list" displays when hovered
+over... later hope to allow it to display/autocomplete
+as text is entered */
+.course-list {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 75%;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.course-list a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.course-list a:hover {
+  background-color: #ddd;
+}
+
+#search:hover .course-list, #search:active .course-list {
+  margin-top: 35px;
+  margin-left: 30px;
+  display: block;
+}
+
+
+input[type=text] {
+  text-align: center;
+  width: 80%;
+  padding: 5px 10px;
+  line-height: 18px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #EEE;
+  transition: background-color 0.4s;
+}
+
+input[type=text]:hover {
+  transition-duration: 0.4s;
+  background-color: #FFF;
+}
+
+#favorite {
+
+}
+
+.course {
+
+}
